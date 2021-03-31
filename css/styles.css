@@ -527,10 +527,11 @@ img {
   background-color: var(--add-bcg-color);
   cursor: pointer;
 
-  /* /* transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function),
+  /* transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function),
     box-shadow var(--duration) var(--timing-function); */
 }
-*/ .project-btn:hover,
+
+.project-btn:hover,
 .project-btn:focus {
   color: var(--primary-bcg-color);
   background-color: var(--accent-color);
