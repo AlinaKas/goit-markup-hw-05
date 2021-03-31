@@ -527,11 +527,10 @@ img {
   background-color: var(--add-bcg-color);
   cursor: pointer;
 
-  /* transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function),
+  /* /* transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function),
     box-shadow var(--duration) var(--timing-function); */
 }
-
-.project-btn:hover,
+*/ .project-btn:hover,
 .project-btn:focus {
   color: var(--primary-bcg-color);
   background-color: var(--accent-color);
@@ -559,32 +558,34 @@ img {
   height: 100%;
 }
 
-.project-card-overlay {
+.project-card-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.project-card:hover .project-card-description,
-.project-card:focus .project-card-description {
-  transform: translateY(0);
-}
-
-.project-card-description {
+.project-card-overlay {
   position: absolute;
   left: 0;
   top: 0;
 
-  display: block;
+  /* display: block; */
   width: 100%;
+  height: 100%;
   padding: 63px 24px;
 
   font-size: 18px;
   line-height: 1.56;
   color: var(--primary-bcg-color);
   background-color: rgba(33, 150, 243, 0.9);
+  overflow: scroll;
 
   transform: translateY(100%);
   transition: transform var(--duration) var(--timing-function);
+}
+
+.project-card:hover .project-card-overlay,
+.project-card:focus .project-card-overlay {
+  transform: translateY(0);
 }
 
 .project-card:hover,
@@ -593,7 +594,7 @@ img {
 }
 
 .project-set-content {
-  padding: 20px 23px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
