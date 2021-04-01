@@ -589,6 +589,7 @@ img {
   color: var(--primary-bcg-color);
   background-color: rgba(33, 150, 243, 0.9);
   overflow: scroll;
+  opacity: 0;
 
   transform: translateY(100%);
   transition: transform var(--duration-animation) var(--timing-function);
@@ -597,6 +598,7 @@ img {
 .project-card:hover .project-card-overlay,
 .project-card:focus .project-card-overlay {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .project-card:hover,
