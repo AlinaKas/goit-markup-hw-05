@@ -598,6 +598,7 @@ img {
 .project-card:hover .project-card-overlay,
 .project-card:focus .project-card-overlay {
   transform: translateY(0);
+  transition: transform var(--duration-animation) var(--timing-function);
   /* opacity: 1; */
 }
 
