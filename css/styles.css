@@ -589,7 +589,7 @@ img {
   color: var(--primary-bcg-color);
   background-color: rgba(33, 150, 243, 0.9);
   overflow: scroll;
-  opacity: 0;
+  /* opacity: 0; */
 
   transform: translateY(100%);
   transition: transform var(--duration-animation) var(--timing-function);
@@ -598,7 +598,7 @@ img {
 .project-card:hover .project-card-overlay,
 .project-card:focus .project-card-overlay {
   transform: translateY(0);
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .project-card:hover,
@@ -638,8 +638,8 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 
   transition: opacity var(--duration-animation) var(--timing-function);
-  /* visibility var(--duration-animation) var(--timing-function),
-    pointer-events var(--duration-animation) var(--timing-function); */
+  visibility var(--duration-animation) var(--timing-function),
+  pointer-events var(--duration-animation) var(--timing-function);
 }
 
 .modal {
