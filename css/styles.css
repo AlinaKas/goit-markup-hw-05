@@ -598,7 +598,6 @@ img {
 .project-card:hover .project-card-overlay,
 .project-card:focus .project-card-overlay {
   transform: translateY(0);
-  transition: transform var(--duration-animation) var(--timing-function);
   /* opacity: 1; */
 }
 
@@ -638,9 +637,9 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity var(--duration-animation) var(--timing-function);
-  visibility var(--duration-animation) var(--timing-function),
-  pointer-events var(--duration-animation) var(--timing-function);
+  transition: opacity var(--duration-animation) var(--timing-function),
+    visibility var(--duration-animation) var(--timing-function),
+    pointer-events var(--duration-animation) var(--timing-function);
 }
 
 .modal {
