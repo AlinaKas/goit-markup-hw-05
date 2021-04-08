@@ -576,6 +576,11 @@ img {
   overflow: hidden;
 }
 
+.project-card:hover .project-card-overlay,
+.project-card:focus .project-card-overlay {
+  transform: translateY(0);
+}
+
 .project-card-overlay {
   position: absolute;
   left: 0;
@@ -592,12 +597,6 @@ img {
 
   transform: translateY(100%);
   transition: transform var(--duration-animation) var(--timing-function);
-}
-
-.project-card:hover .project-card-overlay,
-.project-card:focus .project-card-overlay {
-  transform: translateY(0);
-  z-index: 2;
 }
 
 .project-card:hover,
@@ -636,12 +635,14 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity var(--duration-animation) var(--timing-function);
+  transition: opacity var(--duration-animation) var(--timing-function),
+    visibility var(--duration-animation) var(--timing-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
