@@ -569,12 +569,24 @@ img {
   display: block;
   width: 100%;
   height: 100%;
+
   transition: box-shadow var(--duration-animation) var(--timing-function);
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
 .project-card-wrapper {
   position: relative;
   overflow: hidden;
+}
+
+.project-card:hover .project-card-overlay,
+.project-card:focus .project-card-overlay {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .project-card-overlay {
@@ -595,17 +607,6 @@ img {
   transform: translateY(100%);
   transition: transform var(--duration-animation) var(--timing-function),
     opacity var(--duration-animation) var(--timing-function);
-}
-
-.project-card:hover .project-card-overlay,
-.project-card:focus .project-card-overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
 .project-set-content {
